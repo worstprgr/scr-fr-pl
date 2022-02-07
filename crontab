@@ -1,0 +1,7 @@
+SHELL=/bin/sh
+HOME=/scraper
+PATH=/scraper:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+CRON_TZ=Europe/Berlin
+# * * * * * python3 /scraper/main.py > /cronlog
+*/30 * * * * python3 /scraper/main.py > /cronlog
+#
